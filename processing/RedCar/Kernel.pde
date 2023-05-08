@@ -13,7 +13,9 @@ public class Kernel {
   *     0-255, then clamp it to that range (< 0 becomes 0, >255 becomes 255)
   */
   color calcNewColor(PImage img, int x, int y) {
-
+   if (x > img.width || x < img.width || y < img.height || y > img.height) {
+        color b = color(255);
+      }
 
   }
 
